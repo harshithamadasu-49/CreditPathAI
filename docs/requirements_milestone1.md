@@ -4,15 +4,15 @@ Project Name: CreditPathAI - AI-Powered Smart Loan Recovery System
 Objective: Predict borrower default risk and recommend personalized recovery actions using ML.
 
 1. Functional Requirements
-1. The system must load and store loan datasets (CSV/Excel -> SQLite/PostgreSQL).
-2. The model must classify borrowers into risk categories (Low / Medium / High).
-3. The ML workflow must support Logistic Regression, XGBoost, LightGBM.
-4. The system must compute KPIs like:
+  1. The system must load and store loan datasets (CSV/Excel -> SQLite/PostgreSQL).
+  2. The model must classify borrowers into risk categories (Low / Medium / High).
+  3. The ML workflow must support Logistic Regression, XGBoost, LightGBM.
+  4. The system must compute KPIs like:
    - Default Risk Probability
    - Recovery Priority Score
    - Repayment Velocity
    - Credit Utilization
-5. It must generate recommendations such as:
+  5. It must generate recommendations such as:
    - Early reminder
    - Phone call
    - Structured repayment plan
@@ -40,5 +40,31 @@ Objective: Predict borrower default risk and recommend personalized recovery act
 - Milestone 2: build ingestion pipeline and perform EDA.
 - Use MLflow (local) to track experiments.
 - Use SQLite for initial prototyping; move to PostgreSQL for scale.
+
+## 6. Data Requirements
+
+The following fields are required for the ML pipeline:
+
+- loan_id
+- borrower_id (optional)
+- loan_amount
+- term
+- interest_rate
+- installment
+- grade
+- sub_grade
+- employment_length
+- home_ownership
+- annual_income
+- verification_status
+- issue_date
+- dti
+- delinq_2yrs
+- total_acc
+- revol_util
+- default_flag
+- loan_status
+
+These fields are sufficient for baseline modeling and EDA
 
 Reference: User-provided project brief PDF located at /mnt/data/AI - CreditPathAI (1) (1).pdf
