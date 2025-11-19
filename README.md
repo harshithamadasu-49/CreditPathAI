@@ -25,7 +25,14 @@ How to validate Milestone 1:
 2. Check that data/raw/ contains CSV files and fields.
 3. Push to GitHub and share repo link for review.
 
-Next steps (Milestone 2):
-- Build ingestion scripts to load CSV -> SQLite.
-- Perform EDA and produce visualizations.
+## Milestone 1 Status: Completed
+
+All requirements for Milestone 1 have been fulfilled:
+- Requirements defined
+- KPIs listed
+- Sample datasets prepared
+- Repository structure created
+- Documentation added
+
+Next: Proceed to Milestone 2 – Data Ingestion & EDA.
 
