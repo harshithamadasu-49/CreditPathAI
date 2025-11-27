@@ -22,4 +22,4 @@
 - [x] /docs/ contains milestone documentation
 - [x] Root README.md explains the project
 
-## ⭐ Ready for Review
+
